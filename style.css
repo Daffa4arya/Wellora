@@ -316,7 +316,7 @@ header {
   transition: transform 0.2s ease;
 }
 
-/* Grid Kartu Kanan (2x2 Layout) */
+
 .sec2 {
   flex: 1;
   display: grid;
@@ -355,7 +355,6 @@ header {
   margin: 0;
 }
 
-/* Wrapper Angka dan Satuan Pembagi agar Sejajar */
 .spanminim {
   display: flex;
   align-items: baseline;
@@ -383,7 +382,6 @@ header {
 }
 
 /* about */
-/* Container Utama Section */
 .about {
   width: 90%;
   max-width: 1150px;
