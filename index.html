@@ -23,10 +23,10 @@
     <!-- menu -->
      <nav class="navmenu">
       <a href="#" class="navitem navitem-active">Beranda</a>
-      <a href="#" class="navitem">Fitur</a>
-      <a href="#" class="navitem">Tentang Kami</a>
-      <a href="#" class="navitem">Artikel</a>
-      <a href="#" class="navitem">Contact</a>
+      <a href="#feature" class="navitem">Fitur</a>
+      <a href="#aboutyou" class="navitem">Tentang Kami</a>
+      <a href="#articel" class="navitem">Artikel</a>
+      <a href="#contact" class="navitem">Contact</a>
 
      </nav>
     <!-- button -->
@@ -62,7 +62,7 @@
     </div>
    </section>
    <!-- section1 -->
-   <section class="section">
+   <section class="section" id="feature">
     <div class="secfitur">
       <span>
         <i class="fa-solid fa-person-running"></i>
@@ -169,7 +169,7 @@
     </div>
   </section>
   <!-- about -->
-   <section class="about">
+   <section class="about" id="aboutyou">
   <!-- Kolom Kiri -->
   <div class="about-kiri">
     <span class="about-badge">
@@ -248,7 +248,7 @@
   </div>
 </section>
 <!-- Artikel -->
- <section class="artikel">
+ <section class="artikel" id="articel">
   <div class="containerartikel">
     <span>
       <i class="fa-solid fa-book-open"></i> Edukasi & Inspirasi
@@ -258,7 +258,7 @@
   </div>
  </section>
 <!-- hubungi kami -->
-<section class="hubkami">
+<section class="hubkami" id="contact">
   <div class="containerhub">
     <span>
       <i class="fa-solid fa-headset"></i> Hubungi Kami
@@ -359,5 +359,26 @@
       <hr class="hrfooter">
       <p class="footerp">@2026 Wellora. Seluruh hak cipta dilindungi. Dibuat untuk pembelajaran CSS Flexbox Siswa Kelas X RPL</p>
 </footer>
+<button class="btnrowup" id="tombolrowup" onclick="keAtasHalaman ()">
+  <i class="fa-solid fa-caret-up"></i>
+</button>
 </body>
+<script>
+  window.addEventListener('scroll',function () {
+    const btnTop = document.getElementById
+    ('tombolrowup');
+
+    if (window.scrollY > 300){
+      btnTop.style.display = 'flex';
+    } else {
+      btnTop.style.display = 'none';
+    }
+  });
+
+  function keAtasHalaman(){
+    window.scrollTo({
+      top: 0, behavior: 'smooth'
+      })
+  }
+</script>
 </html>
