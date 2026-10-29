@@ -27,7 +27,7 @@ body {
 
 /* section kembali */
 .kembaliartic  {
-  margin-left: 400px;
+  margin-left: 470px;
   background-color: white;
   padding: 10px 22px;
   border-radius: 25px;
@@ -130,11 +130,11 @@ body {
   color: #12372A;
   line-height: 1.2;
   font-weight: 800;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .p {
-  font-size: 20qpx;
+  font-size: 20px;
   color: var(--size-desc);
   font-weight: 400;
 }
