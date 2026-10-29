@@ -850,12 +850,12 @@ footer nav {
   width: 90%;
   max-width: 1100px;
   margin: 10px auto 30px auto;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+.containerartikel {
+  text-align: center;
 }
 
 .artikel span {
@@ -870,13 +870,105 @@ footer nav {
   margin-bottom: 15px;
 }
 
-.artikel p {
+.containerartikelp {
   font-size: 15px;
   color: #52606d;
   font-weight: 150px;
   line-height: 1.6;
 }
 
+.artikelgrid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
+  gap: 25px;
+  margin-top:75px;
+}
+
+.artikelcard {
+  background-color: white;
+  border-radius: 24px;
+  border: 1px solid #E5E9E8;
+  box-shadow: 0 8px 24px rgba(18, 55, 42, 0.04);
+  transition: transform 0.2s case, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.artikelcard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(18, 55, 42, 0.04) ;
+    transition: transform 0.6s ease;
+}
+
+.artikelimgbox {
+  width: 100%;
+  height: 180px;
+  background-color: #E7F7EE;
+  overflow: hidden;
+}
+
+.artikelimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.artikelcard:hover .artikelimg{
+  transform: scale(1.06);
+
+}
+
+.artikelcontect {
+  padding: 20px 24px 24px;
+}
+
+.artikelmeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.artikel-tag {
+  padding: 6px 10px;
+  background-color:white;
+  border-radius: 30px;
+  border: 1px solid #2ead704f;
+  color: var(--warna-button);
+  font-weight: 500;
+  box-shadow: 0 14px 30px rgba(18, 55, 42, 0.04) ;
+}
+
+.artikelspan {
+  color: var(--size-desc);
+  font-weight: 150px;
+}
+
+.artikelh3 {
+  font-size: 18px;
+  color: var(--warna-hijau-gelap);
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+.artikeldesc {
+  color: var(--size-desc);
+  font-size: 13px;
+  font-weight: 150px;
+  margin-bottom: 15px;
+}
+
+.artikellink {
+  font-size: 15px;
+  color: var(--warna-button);
+  font-weight:750 ;
+  text-decoration: none;
+  gap: 5px;
+}
+
+
+/* button row up */
 .btnrowup {
   position: fixed;
   bottom: 30px;
